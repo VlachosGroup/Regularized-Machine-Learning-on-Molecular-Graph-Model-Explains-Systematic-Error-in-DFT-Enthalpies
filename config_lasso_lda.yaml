@@ -1,0 +1,21 @@
+---
+training_parameters:
+  algorithm: 'lasso'
+  cross_validation_folds: 10
+  get_learning_curve: True
+  cross_valid_iters: 100
+  store_model: True # if set, the model is pickled to the same dir as training data
+
+training_data:
+  X: 'LDA_X_train.p'
+  y: 'LDA_y_train.p'
+  target_label: 'LDA Error'
+  normalize_X: False
+  normalize_y: False
+testing_data:
+  X: 'LDA_X_test.p'
+  y: 'LDA_y_test.p'
+  plot_color: '#00909e'
+random_seeds:
+  l_curve_seed: 421
+
